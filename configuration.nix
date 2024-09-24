@@ -8,11 +8,6 @@ let
   # Import home manager
   homeManager = fetchTarball
     "https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz";
-
-    imports =
-    [ # extra programs, what i like to call "plugins" that are too long to be added in the main file.
-      ./plugins/neovim.nix
-    ];
 in
 
 
@@ -73,10 +68,6 @@ in
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
   };
 
   # Enable touchpad support (enabled default in most desktopManager).
@@ -97,7 +88,6 @@ in
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     fastfetch
     vesktop
