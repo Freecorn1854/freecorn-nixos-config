@@ -18,11 +18,11 @@ in {
         vlc git
       ]);
 
-    imports =
-    [ # extra programs, what i like to call "plugins" that are too long to be added in the main file.
-      "${Plugins}"/programs/neovim.nix
-      "${Plugins}"/programs/minecraft.nix
-    ];
+      # extra programs, what i like to call "plugins" that are too long to be added in the main file.
+      imports = [
+        "${Plugins}"/programs/neovim.nix
+        "${Plugins}"/programs/minecraft.nix
+      ];
 
       # Don't change this
       home.stateVersion = "24.05";
