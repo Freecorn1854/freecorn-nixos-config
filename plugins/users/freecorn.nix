@@ -1,5 +1,5 @@
 let
-  Plugins = /etc/nixos/plugins;
+  Plugins = "/etc/nixos/plugins";
 in {
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.freecorn = {
