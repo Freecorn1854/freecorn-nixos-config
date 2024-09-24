@@ -1,6 +1,4 @@
-let
-  Plugins = "/etc/nixos/plugins";
-in {
+{
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.freecorn = {
     isNormalUser = true;
@@ -14,14 +12,14 @@ in {
     useUserPackages = true;
     users.freecorn = { config, pkgs, ... }: {
       # Install user programs
-      home.packages = (with pkgs; [
+      home.packages = with pkgs; [
         vlc git
-      ]);
+      ];
 
-      # extra programs, what i like to call "plugins" that are too long to be added in the main file.
+      # extra programs, what i shorthand to "plugins", imported relatively that are too long to be added in the main file.
       imports = [
-        "${Plugins}"/programs/neovim.nix
-        "${Plugins}"/programs/minecraft.nix
+        ../programs/neovim.nix
+        ../programs/minecraft.nix
       ];
 
       # Don't change this
