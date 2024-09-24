@@ -13,13 +13,14 @@
     users.freecorn = { config, pkgs, ... }: {
       # Install user programs
       home.packages = with pkgs; [
-        vlc git
+        vlc git alsa-utils
       ];
 
       # extra programs, what i shorthand to "plugins", imported relatively that are too long to be added in the main file.
       imports = [
         ../programs/neovim.nix
         ../programs/minecraft.nix
+        ../programs/obs.nix
       ];
 
       # Don't change this
