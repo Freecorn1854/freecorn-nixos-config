@@ -1,5 +1,5 @@
 let
-  secrets = import ./secrets.nix;
+  Plugins = /etc/nixos/plugins;
 in {
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.freecorn = {
@@ -20,7 +20,8 @@ in {
 
     imports =
     [ # extra programs, what i like to call "plugins" that are too long to be added in the main file.
-      /etc/nixos/plugins/programs/neovim.nix
+      "${Plugins}"/programs/neovim.nix
+      "${Plugins}"/programs/minecraft.nix
     ];
 
       # Don't change this
