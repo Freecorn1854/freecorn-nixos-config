@@ -22,6 +22,7 @@
         ../programs/minecraft.nix
         ../programs/obs.nix
         ../programs/remotedesktop.nix
+        ../programs/libreoffice.nix
       ];
 
       # Don't change this
