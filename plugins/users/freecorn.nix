@@ -13,7 +13,10 @@
     users.freecorn = { config, pkgs, ... }: {
       # Install user programs
       home.packages = with pkgs; [
-        vlc git alsa-utils
+        vlc
+        git
+        alsa-utils
+        blender
       ];
 
       # extra programs, what i shorthand to "plugins", imported relatively that are too long to be added in the main file.
