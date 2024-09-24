@@ -3,20 +3,9 @@ let
 in {
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.freecorn = {
-    description = "FreeCorn";
     isNormalUser = true;
-    openssh.authorizedKeys.keys = secrets.cornKeys;
-    extraGroups = [ 
-      "networkmanager"
-      "wheel"
-      "video"
-      "scanner"
-      "lp"
-      "plugdev"
-      "nginx"
-      "nfsShare"
-      "docker"
-    ];
+    description = "Freecorn";
+    extraGroups = [ "networkmanager" "wheel" ];
   };
 
   # Define home manager programs and configs
@@ -26,16 +15,13 @@ in {
     users.freecorn = { config, pkgs, ... }: {
       # Install user programs
       home.packages = (with pkgs; [
-        rustdesk-flutter anydesk vlc
+        vlc git
       ]);
 
-      # OBS with plugins
-      programs.obs-studio = {
-        enable = true;
-        plugins = with pkgs.obs-studio-plugins; [
-          advanced-scene-switcher obs-multi-rtmp
-        ];
-      };
+    imports =
+    [ # extra programs, what i like to call "plugins" that are too long to be added in the main file.
+      /etc/nixos/plugins/programs/neovim.nix
+    ];
 
       # Don't change this
       home.stateVersion = "24.05";

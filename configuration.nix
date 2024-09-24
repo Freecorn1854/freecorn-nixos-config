@@ -15,10 +15,14 @@ let
     ];
 in
 
+
+
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./plugins/users/freecorn.nix
+      "${homeManager}/nixos"
     ];
 
   # Bootloader.
@@ -77,17 +81,6 @@ in
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.freecorn = {
-    isNormalUser = true;
-    description = "Freecorn";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      kdePackages.kate
-    #  thunderbird
-    ];
-  };
 
   # Install firefox.
   programs.firefox.enable = true; 
