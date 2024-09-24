@@ -21,6 +21,8 @@
         ../programs/neovim.nix
         ../programs/minecraft.nix
         ../programs/obs.nix
+        ../programs/remotedesktop.nix
+        ../programs/xash3d.nix
       ];
 
       # Don't change this
