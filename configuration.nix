@@ -10,9 +10,10 @@ in
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [ # add plugins/packages that require to be install on system instead of home
       ./hardware-configuration.nix
       ./plugins/users/freecorn.nix
+      ./plugins/programs/qemukvm.nix
       "${homeManager}/nixos"
     ];
 
