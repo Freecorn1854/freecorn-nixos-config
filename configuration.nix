@@ -17,20 +17,30 @@ in
       "${homeManager}/nixos"
     ];
 
+  # Allow unfree packages and add the unstable channel
+  nixpkgs = {
+    config = {
+      allowUnfree = true;
+      packageOverrides = pkgs: {
+        unstable = import (
+          fetchTarball "https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz"
+        ){
+          inherit pkgs;
+	  # Allow unfree is needed in both the main nixpkgs and unstable
+          config.allowUnfree = true;
+        };
+      };
+    };
+  };
+
   # Bootloader.
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda";
   boot.loader.grub.useOSProber = true;
   boot.supportedFilesystems = [ "ntfs" ];
 
-  networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
   # Enable networking
+  networking.hostName = "nixos"; # Define your hostname.
   networking.networkmanager.enable = true;
 
   # Set your time zone.
@@ -77,18 +87,15 @@ in
   # Uninstall nano EW
   programs.nano.enable = false;
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
   # Installs steam cuz i wanna play my games man :Waa:
   programs.steam.enable = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+  # List packages installed in system profile.
   environment.systemPackages = with pkgs; [
     wget
     fastfetch
     vesktop
+    # unstable.steam # an example for how you would use a specfic unstable package
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -110,12 +117,7 @@ in
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "24.05"; # Did you read the comment?
-
+  system.stateVersion = "24.05";
 }
