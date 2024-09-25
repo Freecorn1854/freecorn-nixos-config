@@ -26,7 +26,6 @@
         ../programs/obs.nix
         ../programs/remotedesktop.nix
         ../programs/libreoffice.nix
-        ../programs/vrgaming.nix
       ];
 
       # Don't change this
