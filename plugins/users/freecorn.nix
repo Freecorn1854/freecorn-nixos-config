@@ -16,7 +16,7 @@
         vlc
         git
         alsa-utils
-        blender
+        unstable.blender
       ];
 
       # extra programs, what i shorthand to "plugins", imported relatively that are too long to be added in the main file.
