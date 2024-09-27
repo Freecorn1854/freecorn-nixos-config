@@ -17,6 +17,7 @@
         git
         alsa-utils
         unstable.blender
+	unstable.sdrpp
       ];
 
       # extra programs, what i shorthand to "plugins", imported relatively that are too long to be added in the main file.
