@@ -29,6 +29,7 @@
         ../programs/remotedesktop.nix
         ../programs/libreoffice.nix
         ../programs/emulators.nix
+        ../programs/zsh.nix
       ];
 
       # Don't change this

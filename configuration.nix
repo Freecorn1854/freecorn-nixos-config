@@ -88,6 +88,11 @@ in
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  # add default shell
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
+  users.users.freecorn.useDefaultShell = true;
+
   # Install firefox.
   programs.firefox.enable = true; 
 
