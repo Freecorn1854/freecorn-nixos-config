@@ -18,6 +18,7 @@
         alsa-utils
         unstable.blender
 	unstable.sdrpp
+	gparted
       ];
 
       # extra programs, what i shorthand to "plugins", imported relatively that are too long to be added in the main file.
@@ -27,6 +28,7 @@
         ../programs/obs.nix
         ../programs/remotedesktop.nix
         ../programs/libreoffice.nix
+        ../programs/emulators.nix
       ];
 
       # Don't change this
