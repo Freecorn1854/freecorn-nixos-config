@@ -107,6 +107,7 @@ in
     wget
     fastfetch
     vesktop
+    p7zip
     # unstable.steam # an example for how you would use a specfic unstable package
   ];
 
