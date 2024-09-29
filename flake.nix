@@ -6,6 +6,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     hardware.url = "github:nixos/nixos-hardware/master";
+    nur.url = "github:nix-community/NUR";
 
     # Home manager
     home-manager = {
@@ -18,6 +19,7 @@
     self,
     nixpkgs,
     nixpkgs-unstable,
+    nur,
     hardware,
     home-manager,
     ...

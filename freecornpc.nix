@@ -14,24 +14,10 @@ in
       ./hardware-configuration.nix
       ./plugins/users/freecorn.nix
       ./plugins/programs/qemukvm.nix
-      "${homeManager}/nixos"
+      ./plugins/home.nix
     ];
 
   # Allow unfree packages and add the unstable channel
-  nixpkgs = {
-    config = {
-      allowUnfree = true;
-      packageOverrides = pkgs: {
-        unstable = import (
-          fetchTarball "https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz"
-        ){
-          inherit pkgs;
-	  # Allow unfree is needed in both the main nixpkgs and unstable
-          config.allowUnfree = true;
-        };
-      };
-    };
-  };
 
   # flake.
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
