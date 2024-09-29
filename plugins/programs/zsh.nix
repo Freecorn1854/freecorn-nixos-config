@@ -11,6 +11,7 @@
     shellAliases = {
       # NixOS aliases
       vmrun-arch = "qemu-system-x86_64 -enable-kvm -m 4G -drive file=/home/freecorn/arch.img,format=qcow2 -nographic -smp 2";
+      vmrun-freebsd = "qemu-system-x86_64 -enable-kvm -m 4G -drive file=/home/freecorn/freebsd.img,format=qcow2 -nographic -smp 2";
     };
     initExtra = ''
       ${pkgs.any-nix-shell}/bin/any-nix-shell zsh --info-right | source /dev/stdin;
