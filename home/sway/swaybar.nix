@@ -7,13 +7,16 @@
 	statusCommand = "${pkgs.i3status}/bin/i3status";
 	fonts = {
 	  names = ["Ubuntu"];
-	  size = 12.0;
+	  size = 11.5;
 	};
       }
     ];
   };
   programs.i3status = {
     enable = true;
+    general = {
+      interval = 1;
+    };
     modules = {
       "ipv6".enable = false;
       "wireless _first_".enable = false;
