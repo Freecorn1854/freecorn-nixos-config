@@ -1,9 +1,11 @@
 {config, pkgs, outputs, ...}: {
-  wayland.windowManager.sway = {
-    config = rec {
-      modifier = "Mod4";
+  wayland.windowManager.sway = let
+    primeMod = "Mod4";
+  in {
+    config = {
+      modifier = "${primeMod}";
       keybinds = {
-        "${modifier}+Tab" = ''exec rofi -show drun'';
+        "${primeMod}+Tab" = ''exec rofi -show drun'';
       };
     };
   };
