@@ -1,6 +1,6 @@
 {inputs, ...}: {
-  #selfsuper = (self: super: {
-  #});
+  selfsuper = (self: super: {
+  });
   
   finalprev = (final: prev: {
     unstable = import inputs.nixpkgs-unstable {
