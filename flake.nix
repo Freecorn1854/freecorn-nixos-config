@@ -28,7 +28,7 @@
     ];
   in {
     # Your custom packages and modifications, exported as overlays
-    overlays = import ./plugins/overlays.nix {inherit inputs;};
+    overlays = import ./extras/overlays.nix {inherit inputs;};
 
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
@@ -37,7 +37,7 @@
         specialArgs = {inherit inputs outputs;};
         # > Our main nixos configuration file <
         modules = [
-	  ./systems/fcdesktop.nix
+	  ./system/fcdesktop.nix
 	];
       };
     };
@@ -49,7 +49,7 @@
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [
-          ./plugins/home.nix
+          ./home/home.nix
         ];
       };
     };

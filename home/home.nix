@@ -3,6 +3,7 @@
 {pkgs, inputs, outputs, ...}: {
   # import programs
   imports = [
+    ./users/freecorn.nix
     ./programs/neovim.nix
     ./programs/minecraft.nix
     ./programs/obs.nix
