@@ -14,5 +14,6 @@
       "docker"
     ];
     uid = 1000;
+    shell = pkgs.zsh;
   };
 }
