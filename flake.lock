@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "hardware": {
-      "locked": {
-        "lastModified": 1727613673,
-        "narHash": "sha256-qqIffTQfxMYo3MKQ9BoY2s2mdKZNnUiksdnxv81js9U=",
-        "owner": "nixos",
-        "repo": "nixos-hardware",
-        "rev": "f5c239fa9acb27f0a5326ba2949c00fada89ca9f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "master",
-        "repo": "nixos-hardware",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -86,7 +70,6 @@
     },
     "root": {
       "inputs": {
-        "hardware": "hardware",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",

@@ -1,8 +1,18 @@
 {
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.freecorn = {
+    description = "FreeCorn";
     isNormalUser = true;
-    description = "Freecorn";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ 
+      "networkmanager"
+      "wheel"
+      "video"
+      "scanner"
+      "lp"
+      "plugdev"
+      "nginx"
+      "nfsShare"
+      "docker"
+    ];
+    uid = 1000;
   };
 }

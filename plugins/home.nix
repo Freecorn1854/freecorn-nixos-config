@@ -1,16 +1,16 @@
 # This is your home-manager configuration file
 # Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
 {pkgs, inputs, outputs, ...}: {
+  # import programs
   imports = [
-    # import programs
-        ./programs/neovim.nix
-        ./programs/minecraft.nix
-        ./programs/obs.nix
-        ./programs/remotedesktop.nix
-        ./programs/libreoffice.nix
-        ./programs/emulators.nix
-        ./programs/zsh.nix
-        ./programs/misc.nix
+    ./programs/neovim.nix
+    ./programs/minecraft.nix
+    ./programs/obs.nix
+    ./programs/remotedesktop.nix
+    ./programs/libreoffice.nix
+    ./programs/emulators.nix
+    ./programs/zsh.nix
+    ./programs/misc.nix
   ];
 
   nixpkgs = {
