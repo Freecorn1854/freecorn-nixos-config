@@ -30,6 +30,16 @@
     { device = "/dev/disk/by-uuid/7de254ad-8569-46e1-8c7f-379c768d43fb"; }
   ];
 
+  hardware.opengl = {
+  ## radv: an open-source Vulkan driver from freedesktop
+  driSupport = true;
+  driSupport32Bit = true;
+
+  ## amdvlk: an open-source Vulkan driver from AMD
+  extraPackages = [ pkgs.amdvlk ];
+  extraPackages32 = [ pkgs.driversi686Linux.amdvlk ];
+  };
+
   # Enables DHCP on each ethernet and wireless interface
   networking.useDHCP = lib.mkDefault true;
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
