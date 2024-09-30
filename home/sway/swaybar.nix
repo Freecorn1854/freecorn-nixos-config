@@ -1,7 +1,7 @@
 {config, pkgs, outputs, ...}: {
   wayland.windowManager.sway = {
-    config.bars [
-      top = {
+    config.bars = [
+      {
         position = "top";
         statusCommand = null;
       };
