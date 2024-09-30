@@ -5,8 +5,7 @@
     server.enable = false;
     settings = {
       main = {
-        term = "xterm-256color";
-        font = "UbuntuMono Nerd Font:size=14.7";
+        font = "Liberation Mono:size=13";
       };
     };
   };
