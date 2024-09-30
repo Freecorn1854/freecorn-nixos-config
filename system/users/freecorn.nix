@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   users.users.freecorn = {
     description = "FreeCorn";
     isNormalUser = true;
