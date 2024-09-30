@@ -4,6 +4,9 @@
       {
         position = "top";
 	colors.background = "#20202000";
+	statusCommand = "${pkgs.i3status}/bin/i3status";
+	names = ["Ubuntu"];
+	fonts.size = 13.0;
       }
     ];
   };
