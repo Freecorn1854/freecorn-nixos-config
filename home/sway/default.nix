@@ -3,7 +3,7 @@
     ./hardware.nix
     ./hotkeys.nix
     ./swaybar.nix
-    ./swayshot.nix
+    # ./swayshot.nix
   ];
 
   # Enable Sway and write some scripts
