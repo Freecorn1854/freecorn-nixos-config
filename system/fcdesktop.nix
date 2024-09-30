@@ -1,9 +1,9 @@
 { config, pkgs, ... }: {
   # add plugins/packages that require to be install on system instead of home
   imports = [
-    ./fcdesktophardware.nix
+    ./hardware/fcdesktop.nix
     ./users/freecorn.nix
-    ./programs/qemukvm.nix
+    ./plugins/qemukvm.nix
   ];
 
   # flake.
