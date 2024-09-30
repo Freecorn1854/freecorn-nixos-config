@@ -30,6 +30,9 @@
     { device = "/dev/disk/by-uuid/7de254ad-8569-46e1-8c7f-379c768d43fb"; }
   ];
 
+  # force gpu driver to use amdgpu
+  boot.kernelParams = [ "radeon.cik_support=0" "amdgpu.cik_support=1" ];
+
   hardware.opengl = {
   ## radv: an open-source Vulkan driver from freedesktop
   driSupport = true;
