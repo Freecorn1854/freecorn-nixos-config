@@ -4,7 +4,7 @@
       {
         position = "top";
         statusCommand = null;
-      };
+      }
     ];
   };
   programs.i3status = {
