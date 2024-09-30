@@ -6,6 +6,7 @@
     ./plugins/qemukvm.nix
     ./plugins/sway.nix
     ./plugins/qt.nix
+    ./plugins/plymouth.nix
   ];
 
   # flake.
