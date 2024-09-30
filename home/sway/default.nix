@@ -2,6 +2,7 @@
   imports = [
     ./hardware.nix
     ./hotkeys.nix
+    ./swaybar.nix
   ];
 
   # Enable Sway and write some scripts
