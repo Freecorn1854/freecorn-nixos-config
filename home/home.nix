@@ -6,7 +6,6 @@
     ./users/freecorn.nix
     ./sway
     ./programs/neovim.nix
-    ./programs/minecraft.nix
     ./programs/obs.nix
     ./programs/remotedesktop.nix
     ./programs/libreoffice.nix
@@ -15,6 +14,7 @@
     ./programs/gtk.nix
     ./programs/rofi.nix
     ./programs/foot.nix
+    ./programs/gaming.nix
     ./programs/misc.nix
   ];
 

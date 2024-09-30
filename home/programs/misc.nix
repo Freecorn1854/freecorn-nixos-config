@@ -5,7 +5,6 @@
     fastfetch
     vesktop
     p7zip
-    steam
     vlc
     git
     alsa-utils

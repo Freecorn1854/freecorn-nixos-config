@@ -15,6 +15,8 @@
   # allow non nix programs to run
   programs.nix-ld.enable = true;
 
+  nixpkgs.config.allowUnfree = true;
+
   # Set your time zone.
   time.timeZone = "America/Edmonton";
 
@@ -56,6 +58,9 @@
 
   # Uninstall nano EW
   programs.nano.enable = false;
+
+  # steam has to be a system package or eles it doesnt open
+  programs.steam.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
