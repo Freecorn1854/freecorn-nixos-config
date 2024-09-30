@@ -4,8 +4,7 @@
   # import programs
   imports = [
     ./users/freecorn.nix
-    ./sway/hardware.nix
-    ./sway/hotkeys.nix
+    ./sway
     ./programs/neovim.nix
     ./programs/minecraft.nix
     ./programs/obs.nix
