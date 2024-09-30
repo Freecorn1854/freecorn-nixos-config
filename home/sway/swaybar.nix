@@ -3,7 +3,7 @@
     config.bars = [
       {
         position = "top";
-        statusCommand = null;
+	colors.background = "#20202000";
       }
     ];
   };
@@ -11,12 +11,10 @@
     enable = true;
     modules = {
       "ipv6".enable = false;
+      "wireless _first_".enable = false;
+      "ethernet _first_".enable = false;
+      "battery all".enable = false;
       "disk /".enable = false;
-      "run_watch DHCP".enable = false;
-      "run_watch VPN".enable = false;
-      "wireless wlan0".enable = false;
-      "ethernet eth0".enable = false;
-      "battery 0".enable = false;
     };
   };
 }
