@@ -6,7 +6,10 @@
       modifier = "${primeMod}";
       keybindings = {
         "${primeMod}+Tab" = ''exec rofi -show drun'';
-	# "${primeMod}+Enter" = ''exec foot'';
+	"${primeMod}+Shift+q" = ''kill'';
+	"${primeMod}+Return" = ''exec foot'';
+	"${primeMod}+s" = ''exec rofi -show run -p Command'';
+        "${primeMod}+x" = ''exec rofiscripts --power'';
       };
     };
   };
