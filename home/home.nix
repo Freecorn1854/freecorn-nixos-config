@@ -14,6 +14,7 @@
     ./programs/zsh.nix
     ./programs/gtk.nix
     ./programs/rofi.nix
+    ./programs/foot.nix
     ./programs/misc.nix
   ];
 
