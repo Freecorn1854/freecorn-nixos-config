@@ -1,9 +1,11 @@
 {config, pkgs, outputs, ...}: {
   wayland.windowManager.sway = {
-    config.bars.top = {
-      position = "top";
-      statusCommand = null;
-    };
+    config.bars [
+      top = {
+        position = "top";
+        statusCommand = null;
+      };
+    ];
   };
   programs.i3status = {
     enable = true;
