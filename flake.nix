@@ -30,6 +30,9 @@
     # Your custom packages and modifications, exported as overlays
     overlays = import ./extras/overlays.nix {inherit inputs;};
 
+    # Variables defined so they can be accessed globally
+    ws = import ./extras/workspaces.nix;
+
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {
