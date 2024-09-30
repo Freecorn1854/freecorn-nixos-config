@@ -3,8 +3,9 @@
 {pkgs, inputs, outputs, ...}: {
   # import programs
   imports = [
-    ./sway-hardware.nix
     ./users/freecorn.nix
+    ./sway/hardware.nix
+    ./sway/hotkeys.nix
     ./programs/neovim.nix
     ./programs/minecraft.nix
     ./programs/obs.nix
