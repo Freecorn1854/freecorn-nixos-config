@@ -6,6 +6,7 @@
       modifier = "${primeMod}";
       keybindings = {
         "${primeMod}+Tab" = ''exec rofi -show drun'';
+	# "${primeMod}+Enter" = ''exec foot'';
       };
     };
   };
