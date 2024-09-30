@@ -25,6 +25,9 @@
       nixswitch = "sysswitch; homeswitch;";
       nixdate = "flakedate && sysswitch; homeswitch";
 
+      # Unzip to 7za
+      unzip = "7za x";
+
     };
     initExtra = ''
       ${pkgs.any-nix-shell}/bin/any-nix-shell zsh --info-right | source /dev/stdin;
