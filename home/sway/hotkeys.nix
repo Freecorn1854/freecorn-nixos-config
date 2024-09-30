@@ -2,6 +2,7 @@
   wayland.windowManager.sway = {
     config = let
       primeMod = "Mod4";
+      secMod = "Mod1";      
     in {
       modifier = "${primeMod}";
       keybindings = {
