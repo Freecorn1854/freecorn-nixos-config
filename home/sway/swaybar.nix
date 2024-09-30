@@ -7,7 +7,7 @@
 	statusCommand = "${pkgs.i3status}/bin/i3status";
 	fonts = {
 	  names = ["Ubuntu"];
-	  size = 13.0;
+	  size = 12.0;
 	};
       }
     ];
