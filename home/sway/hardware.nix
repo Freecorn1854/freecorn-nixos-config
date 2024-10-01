@@ -19,7 +19,7 @@
           pos = "0 228";
           mode = "1280x1024@75Hz";
           max_render_time = "3";
-          bg = "~/.wallpapers/2.jpg fill";
+          bg = "~/.wallpapers/1.png fill";
         };
       };
       # HID device config
