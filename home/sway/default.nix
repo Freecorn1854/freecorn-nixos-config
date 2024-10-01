@@ -5,6 +5,7 @@
     ./swaybar.nix
     # ./swayshot.nix
     ./theme.nix
+    ./autostart.nix
   ];
 
   # Enable Sway and write some scripts

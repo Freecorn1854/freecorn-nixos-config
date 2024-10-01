@@ -3,7 +3,7 @@
     config.bars = [
       {
         position = "top";
-	colors.background = "#20202000";
+	colors.background = "#29C45300";
 	statusCommand = "i3status";
 	fonts = {
 	  names = ["Ubuntu"];
