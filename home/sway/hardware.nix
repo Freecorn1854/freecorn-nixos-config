@@ -13,13 +13,14 @@
           max_render_time = "3";
           bg = "~/.wallpapers/1.png fill";
           scale = "1";
-          adaptive_sync = "on";
+          adaptive_sync = "off";
         };
         DVI-I-1 = {
           pos = "0 228";
           mode = "1280x1024@75Hz";
           max_render_time = "3";
           bg = "~/.wallpapers/1.png fill";
+	  adaptive_sync = "off";
         };
       };
       # HID device config
