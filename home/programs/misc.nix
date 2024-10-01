@@ -11,6 +11,7 @@
     unstable.blender
     unstable.sdrpp
     gparted
-    pcmanfm-qt
+    unstable.pcmanfm-qt
+    imv
   ];
 }
