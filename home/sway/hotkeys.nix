@@ -60,10 +60,10 @@
         
 
         # Screenshots
-        # "Print" = ''exec swayshot --swappy'';
-        # "${primeMod}+Shift+f" = ''exec swayshot --swappy'';
-        # "Shift+Print" = ''exec swayshot --current'';
-        # "Ctrl+Print" = ''exec swayshot --all'';
+         "Print" = ''exec swayshot --swappy'';
+         "${primeMod}+Shift+f" = ''exec swayshot --swappy'';
+         "Shift+Print" = ''exec swayshot --current'';
+         "Ctrl+Print" = ''exec swayshot --all'';
 	
       };
     };

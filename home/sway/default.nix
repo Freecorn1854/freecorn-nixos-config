@@ -3,9 +3,10 @@
     ./hardware.nix
     ./hotkeys.nix
     ./swaybar.nix
-    # ./swayshot.nix
+    ./swayshot.nix
     ./theme.nix
     ./autostart.nix
+    ./rules.nix
   ];
 
   # Enable Sway and write some scripts

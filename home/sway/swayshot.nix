@@ -5,11 +5,11 @@
       # Swappy
       handle_swappy() {
         # Create an imv window to act as a static screen
-        grim -t jpeg - | imv -w "GlobalShot" - & imv_pid=$!
+        grim -t jpeg -q 100 - | imv -w "GlobalShot" - & imv_pid=$!
 
         # Capture the screenshot of the selected area and save to a temporary file
         selected_area=$(swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"'\
-        | XCURSOR_SIZE=40 slurp -w toString int -c 4BC423 -B 00000066 -b 00000099)
+        | XCURSOR_SIZE=40 slurp -w ${outputs.look.border.string} -c ${outputs.look.colors.prime} -B 00000066 -b 00000099)
         temp_file=$(mktemp -u).png
         grim -g "$selected_area" "$temp_file"
 
@@ -49,7 +49,7 @@
       handle_all() {
         # Take a screenshot and save it to the temporary file
         temp_file=$(mktemp -u).png
-        grim -t jpeg "$temp_file"
+        grim -t jpeg -q 100 "$temp_file"
 
         # Check if the screenshot was successfully taken
         if [ $? -eq 0 ]; then

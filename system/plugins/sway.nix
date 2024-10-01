@@ -1,8 +1,13 @@
 { config, pkgs, lib, ... }:
 {
-  environment.systemPackages = with pkgs; [
-    grim # screenshot functionality
-    slurp # screenshot functionality
+  environment.systemPackages = with pkgs; [ 
+    # screenshot functionality
+    grim
+    slurp
+    swappy
+    jq
+    lm_sensors
+    imv
     wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
     mako # notification system developed by swaywm maintainer
     wdisplays
