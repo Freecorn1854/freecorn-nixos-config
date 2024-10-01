@@ -6,3 +6,4 @@ https://git.jimbosfiles.com/Jimbo/NixOS-Config and Jimbo has been a big help in 
 ### this repo is at a point that i feel like its ready to be public.
 
 ![image](./screenshot1.png)
+Screenshot as of Sept 30th 2024.
