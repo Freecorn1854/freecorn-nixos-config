@@ -9,7 +9,7 @@
         commands = [
            {
             criteria = {title = "^GlobalShot";};
-            command = ''floating enable, fullscreen enable global'';
+            command = ''floating enable, fullscreen enable global, mark borderless'';
           }
         ];
       };
