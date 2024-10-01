@@ -1,9 +1,9 @@
 {
   colors = {
-    prime = ''e38a17''; #e38a17
-    accent = ''9c650e''; #9c650e
-    split = ''b88637''; #b88637
-    actSplit = ''ad7f34''; #ad7f34
+    prime = ''44ab22''; #44ab22
+    accent = ''2d7016''; ##2d7016
+    split = ''225411''; #225411
+    actSplit = ''225411''; #225411
     dark = ''101419''; #101419
     mid = ''171C23''; #171C23
     light = ''272b33''; #272B33
