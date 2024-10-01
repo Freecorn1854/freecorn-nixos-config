@@ -4,6 +4,7 @@
     ./hotkeys.nix
     ./swaybar.nix
     # ./swayshot.nix
+    ./theme.nix
   ];
 
   # Enable Sway and write some scripts
