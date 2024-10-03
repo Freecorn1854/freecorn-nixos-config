@@ -13,5 +13,6 @@
     gparted
     unstable.pcmanfm-qt
     imv
+    telegram-desktop
   ];
 }
