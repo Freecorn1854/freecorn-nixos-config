@@ -17,6 +17,7 @@
       nixclean = "sudo nix-store --gc; nix-collect-garbage -d";
       nixpurge = "sudo nix-collect-garbage --delete-old";
       nixoptimize = "sudo nix store optimise";
+      nixcleanall = "nixclean; nixpurge; nixoptimize";
 
       # Flake commands
       flakedate = "sudo nix flake update /etc/nixos";
