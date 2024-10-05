@@ -4,7 +4,6 @@
     # screenshot functionality
     grim
     slurp
-    swappy
     jq
     lm_sensors
     imv

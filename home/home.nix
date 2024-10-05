@@ -15,6 +15,7 @@
     ./programs/rofi.nix
     ./programs/foot.nix
     ./programs/gaming.nix
+    ./programs/swappy.nix
     ./programs/misc.nix
   ];
 
