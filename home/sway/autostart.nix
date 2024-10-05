@@ -9,7 +9,7 @@
 # Foreground apps
         {command = "steam";}
         {command = "vesktop";}
-       # {command = "element-desktop";}
+        {command = "ckb-next";}
        # {command = "thunderbird";}
       ];
     };
