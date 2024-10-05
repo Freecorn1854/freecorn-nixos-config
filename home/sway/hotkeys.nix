@@ -58,6 +58,9 @@
         "${secMod}+Shift+F8" = ''move container to workspace ${outputs.ws.w8a}; workspace ${outputs.ws.w8a}'';
         "${secMod}+Shift+F9" = ''move container to workspace ${outputs.ws.w9a}; workspace ${outputs.ws.w9a}'';
         
+        # Volume control
+        "XF86AudioRaiseVolume" = ''exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+'';
+        "XF86AudioLowerVolume" = ''exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-'';
 
         # Screenshots
          "Print" = ''exec swayshot --swappy'';
