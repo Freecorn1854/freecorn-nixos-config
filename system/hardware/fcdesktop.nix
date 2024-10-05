@@ -33,6 +33,9 @@
   # force gpu driver to use amdgpu
   boot.kernelParams = [ "radeon.cik_support=0" "amdgpu.cik_support=1" ];
 
+  # proper corsair keyboard support
+  hardware.ckb-next.enable = true;
+
   hardware.opengl = {
   ## radv: an open-source Vulkan driver from freedesktop
   driSupport = true;
