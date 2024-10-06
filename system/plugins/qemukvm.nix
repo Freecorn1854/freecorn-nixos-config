@@ -23,5 +23,6 @@
     virtiofsd
     dnsmasq
     spice-vdagent
+    virtualbox
   ];
 }
