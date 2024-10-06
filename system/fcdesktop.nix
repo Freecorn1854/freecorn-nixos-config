@@ -7,6 +7,7 @@
     ./plugins/sway.nix
     ./plugins/qt.nix
     ./plugins/plymouth.nix
+    ./plugins/fonts.nix
   ];
 
   # flake.

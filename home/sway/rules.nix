@@ -5,7 +5,7 @@
       # Rules
       window = {
         border = outputs.look.border.int;
-        titlebar = true;
+        titlebar = false;
         commands = [
            {
             criteria = {title = "^GlobalShot";};

@@ -3,7 +3,7 @@
   wayland.windowManager.sway = {
     config = {
       # Use Waybar rather than Sway's
-
+	bars = [{command = "waybar";}];
       startup = [
 
 # Foreground apps
