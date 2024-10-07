@@ -6,10 +6,10 @@
 	bars = [{command = "waybar";}];
       startup = [
 
-# Foreground apps
+# apps
         {command = "steam";}
         {command = "vesktop";}
-        {command = "ckb-next";}
+        {command = "ckb-next --background";}
        # {command = "thunderbird";}
       ];
     };

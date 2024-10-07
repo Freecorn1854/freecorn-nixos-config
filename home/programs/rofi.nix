@@ -17,7 +17,7 @@
           Reboot) reboot;;
           Sleep) swaylock --sleep &;;
           Lock) swaylock &;;
-          Kill) pkill -9 sway;;
+          Kill) sway exit;;
         esac
       }
             
