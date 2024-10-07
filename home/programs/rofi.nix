@@ -11,13 +11,12 @@
     rofiScripts = pkgs.writeScriptBin "rofiscripts" ''      
       # Lock menu
       handle_power() {
-        POWER=$(echo -e "Shutdown\nReboot\nSleep\nLock\nKill" | rofi -dmenu -i -p "Power")
+        POWER=$(echo -e "Shutdown\nReboot\nSleep\nLock" | rofi -dmenu -i -p "Power")
         case $POWER in
           Shutdown) poweroff;;
           Reboot) reboot;;
           Sleep) swaylock --sleep &;;
           Lock) swaylock &;;
-          Kill) sway exit;;
         esac
       }
             
