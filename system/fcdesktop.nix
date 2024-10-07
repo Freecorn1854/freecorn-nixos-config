@@ -8,6 +8,7 @@
     ./plugins/qt.nix
     ./plugins/plymouth.nix
     ./plugins/fonts.nix
+    ./plugins/misc.nix
   ];
 
   # flake.

@@ -13,6 +13,7 @@
     # packages needed for waybar config
     pciutils
     bc
+    udiskie
   ];
 
   # Enable the gnome-keyring secrets vault.
