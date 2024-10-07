@@ -7,7 +7,7 @@
       startup = [
 
 # apps
-        {command = "steam";}
+        {command = "steam -silent";}
         {command = "vesktop";}
         {command = "ckb-next --background";}
        # {command = "thunderbird";}
