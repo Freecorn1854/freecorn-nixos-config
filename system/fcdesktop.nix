@@ -3,7 +3,7 @@
   imports = [
     ./hardware/fcdesktop.nix
     ./users/freecorn.nix
-    ./plugins/qemukvm.nix
+    ./plugins/vms.nix
     ./plugins/sway.nix
     ./plugins/qt.nix
     ./plugins/plymouth.nix

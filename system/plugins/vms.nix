@@ -18,11 +18,12 @@
     spiceUSBRedirection.enable = true;
   };
 
+  virtualisation.virtualbox.host.enable = true;
+
   environment.systemPackages = with pkgs; [
     virt-manager
     virtiofsd
     dnsmasq
     spice-vdagent
-    virtualbox
   ];
 }
