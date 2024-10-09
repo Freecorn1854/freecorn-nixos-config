@@ -16,6 +16,7 @@
     ./programs/foot.nix
     ./programs/gaming.nix
     ./programs/swappy.nix
+    ./programs/guifiles.nix
     ./programs/misc.nix
   ];
 
