@@ -1,18 +1,23 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    # Web Broswser
     firefox
+    #CLI Tools
     wget
     fastfetch
-    vesktop
     p7zip
-    vlc
     git
     alsa-utils
+    imv
+    # Messaging
+    vesktop
+    telegram-desktop
+    # Useful programs/tools
+    vlc
     unstable.blender
     unstable.sdrpp
     gparted
     unstable.pcmanfm-qt
-    imv
-    telegram-desktop
+    shotcut
   ];
 }
