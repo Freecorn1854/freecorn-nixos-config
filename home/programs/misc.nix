@@ -21,5 +21,7 @@
     shotcut
     # Passwords
     keepass
+    # DVDs
+    dvdstyler
   ];
 }
