@@ -22,6 +22,6 @@
     # Passwords
     keepass
     # DVDs
-    dvdstyler
+    unstable.dvdstyler
   ];
 }
