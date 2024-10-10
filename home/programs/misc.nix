@@ -19,5 +19,7 @@
     gparted
     unstable.pcmanfm-qt
     shotcut
+    # Passwords
+    keepass
   ];
 }
