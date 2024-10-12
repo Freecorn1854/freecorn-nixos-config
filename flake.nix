@@ -7,18 +7,27 @@
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/NUR";
 
+    # Flatpak Support, in Nix style!
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
+
     # Home manager
     home-manager = {
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-  };
+    # Roblox for linux
+    sober = {
+       url = "https://sober.vinegarhq.org/sober.flatpakref";
+       flake = false;
+      };
+    };
 
   outputs = {
     self,
     nixpkgs,
     nixpkgs-unstable,
     nur,
+    nix-flakpak,
     home-manager,
     ...
   } @inputs: let
@@ -41,7 +50,9 @@
         specialArgs = {inherit inputs outputs;};
         # > Our main nixos configuration file <
         modules = [
+	  inputs.nix-flatpak.nixosModules.nix-flatpak
 	  ./system/fcdesktop.nix
+
 	];
       };
     };
@@ -52,6 +63,7 @@
       "freecorn@FreecornDesktop" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs outputs;};
+	extraSpecialArgs.flake-inputs = inputs;
         modules = [
           ./home/home.nix
         ];

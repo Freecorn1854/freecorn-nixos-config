@@ -9,6 +9,9 @@
     ./plugins/plymouth.nix
     ./plugins/fonts.nix
     ./plugins/printing.nix
+    ./plugins/vr.nix
+    ./flatpak
+    ./nixregs.nix
     ./plugins/misc.nix
   ];
 
@@ -17,6 +20,9 @@
 
   # allow non nix programs to run
   programs.nix-ld.enable = true;
+
+  # flatpak support
+  services.flatpak.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
