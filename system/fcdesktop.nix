@@ -12,6 +12,7 @@
     ./plugins/vr.nix
     ./flatpak
     ./nixregs.nix
+    ./plugins/wine.nix
     ./plugins/misc.nix
   ];
 
