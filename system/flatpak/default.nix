@@ -4,6 +4,8 @@
     ./sober.nix
   ];
     services.flatpak = {
+    update.onActivation = true;
+    uninstallUnmanaged = true;
         remotes = [
             {
                 name = "flathub";
