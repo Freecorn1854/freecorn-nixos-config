@@ -3,7 +3,7 @@
 {config, ...}: {
 
   nix.registry.flakes.from = {
-      id = "nix-flakpak";
+      id = "nix-flatpak";
       type = "indirect";
   };
 

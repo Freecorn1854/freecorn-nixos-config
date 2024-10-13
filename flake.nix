@@ -27,7 +27,7 @@
     nixpkgs,
     nixpkgs-unstable,
     nur,
-    nix-flakpak,
+    nix-flatpak,
     home-manager,
     ...
   } @inputs: let

@@ -21,20 +21,6 @@
         "type": "github"
       }
     },
-    "nix-flakpak": {
-      "locked": {
-        "lastModified": 1711997201,
-        "narHash": "sha256-J71xzQlVYsjagA4AsVwRazhBh2rZrPpKvxTgs6UzL7c=",
-        "owner": "gmodena",
-        "repo": "nix-flatpak",
-        "rev": "b76fa31346db7fc958a9898f3c594696ca71c4fd",
-        "type": "github"
-      },
-      "original": {
-        "id": "nix-flakpak",
-        "type": "indirect"
-      }
-    },
     "nix-flatpak": {
       "locked": {
         "lastModified": 1711997201,
@@ -101,7 +87,6 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nix-flakpak": "nix-flakpak",
         "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
