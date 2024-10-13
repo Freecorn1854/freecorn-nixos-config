@@ -1,3 +1,5 @@
+# credits for this github repo link https://github.com/Bear-03/dotfiles/ for the sober hotfix!
+
 { config, pkgs, inputs, ... }:
 let
     inherit (inputs) sober nix-flatpak;
