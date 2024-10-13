@@ -7,6 +7,7 @@
     ./theme.nix
     ./autostart.nix
     ./rules.nix
+    ./swaylock.nix
   ];
 
   # Enable Sway and write some scripts

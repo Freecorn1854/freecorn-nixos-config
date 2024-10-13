@@ -1,5 +1,7 @@
 ### I DO NOT OWN THE RIGHTS TO THESE SCREENSHOTS:
 
+### lock.jpg by Luna, https://git.jimbosfiles.com/Luna
+
 ## SOURCE LINKS:
 https://tjkelly.com/wp-content/uploads/windows-xp-desktop-background-wallpaper-windows-xp-800x600.jpg
 
