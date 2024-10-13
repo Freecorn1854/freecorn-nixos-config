@@ -3,7 +3,7 @@
 {pkgs, inputs, outputs, ...}: {
   # import programs
   imports = [
-    inputs.nix-flatpak.homeManagerModules.nix-flatpak
+#    inputs.nix-flatpak.homeManagerModules.nix-flatpak
     ./users/freecorn.nix
     ./sway
 #    ./flatpak
