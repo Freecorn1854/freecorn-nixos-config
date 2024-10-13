@@ -28,6 +28,9 @@
       nvim-colorizer-lua
       vim-monokai-pro
 
+      # Discord
+      vimsence
+
     ];
     extraConfig = ''
       lua <<EOF
@@ -95,6 +98,9 @@
       nmap <C-x> :bnext<CR>
       nmap <C-z> :bprev<CR>
       nmap <C-w> :bd<CR>
+
+      let g:vimsence_small_text = 'NeoVim'
+      let g:vimsence_small_image = 'neovim'
     '';
   };
 }
