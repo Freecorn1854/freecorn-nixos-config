@@ -27,6 +27,7 @@
       # Hex color visualizer and color theme
       nvim-colorizer-lua
       vim-monokai-pro
+
     ];
     extraConfig = ''
       lua <<EOF
