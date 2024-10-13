@@ -4,6 +4,7 @@ This config is the main configuration i use for NixOS, some stuff has been copie
 https://git.jimbosfiles.com/Jimbo/NixOS-Config and Jimbo has been a big help in helping setting things up.
 
 ### this repo is at a point that i feel like its ready to be public.
+a clone of this repo can be found on github: https://github.com/Freecorn1854/freecorn-nixos-config
 
 ![image](./screenshot1.png)
 Screenshot as of Oct 8th 2024.
