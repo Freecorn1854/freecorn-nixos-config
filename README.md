@@ -9,4 +9,4 @@ https://git.jimbosfiles.com/Jimbo/NixOS-Config and Jimbo has been a big help in 
 #### if you are on github.com, a clone of this repo can be found on jimbosfiles.com: https://git.jimbosfiles.com/Freecorn1854/desktop-nixos-config
 
 ![image](./screenshot1.png)
-Screenshot as of Oct 8th 2024.
+Screenshot as of Oct 8th 2024
