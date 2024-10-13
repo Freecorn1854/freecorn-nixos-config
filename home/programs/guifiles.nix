@@ -1,9 +1,9 @@
 {pkgs, ...}: {
   # Files that only make sense with a GUI
   home.file = {
-#    ".face" = {
-#      source = ../assets/user-icon.png;
-#    };
+    ".face" = {
+      source = ../assets/corno.png;
+    };
     ".wallpapers" = {
       source = ../assets/wallpapers;
       recursive = true;
