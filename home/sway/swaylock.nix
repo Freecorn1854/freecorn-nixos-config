@@ -32,7 +32,7 @@
       \
       --indicator \
       --indicator-radius=80 \
-      --image=~/.wallpapers/lock.png \
+      --image=~/.wallpapers/lock.jpg \
       --clock \
       --font=${outputs.look.fonts.main} \
       --font-size=30 \
