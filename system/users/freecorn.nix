@@ -9,9 +9,7 @@
       "scanner"
       "lp"
       "plugdev"
-      "nginx"
-      "nfsShare"
-      "docker"
+      "vboxusers"
     ];
     uid = 1000;
     shell = pkgs.zsh;
