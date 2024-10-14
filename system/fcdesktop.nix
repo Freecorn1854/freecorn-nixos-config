@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, inputs, outputs, ... }: {
   # add plugins/packages that require to be install on system instead of home
   imports = [
     ./hardware/fcdesktop.nix
@@ -36,6 +36,14 @@
 
   # Enable the X11 windowing system, uneeded for Wayland
   #services.xserver.enable = true;
+
+  nixpkgs = {
+    # You can add overlays here
+    overlays = [
+      # Add overlays your own flake exports (from overlays and pkgs dir):
+      outputs.overlays.finalprev
+    ];
+  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
