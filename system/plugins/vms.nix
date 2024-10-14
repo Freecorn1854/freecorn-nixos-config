@@ -18,9 +18,16 @@
     spiceUSBRedirection.enable = true;
   };
 
-#  virtualisation.virtualbox.host.enable = true;
+#  nixpkgs.config = {
+#      packageOverrides = pkgs: {
+#        virtualbox = unstable.virtualbox.override {
+#          inherit (config.boot) kernel;
+#        };
+#      };
+#  };
 
-  virtualisation.vmware.host.enable = true;
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.host.enableExtensionPack = true;
 
   environment.systemPackages = with pkgs; [
     virt-manager
