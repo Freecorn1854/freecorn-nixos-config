@@ -26,4 +26,7 @@
     dnsmasq
     spice-vdagent
   ];
+
+  # dept of libvirtd ig
+  security.polkit.enable = true;
 }
