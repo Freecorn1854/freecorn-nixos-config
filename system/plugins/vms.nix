@@ -18,7 +18,9 @@
     spiceUSBRedirection.enable = true;
   };
 
-  virtualisation.virtualbox.host.enable = true;
+#  virtualisation.virtualbox.host.enable = true;
+
+  virtualisation.vmware.host.enable = true;
 
   environment.systemPackages = with pkgs; [
     virt-manager
