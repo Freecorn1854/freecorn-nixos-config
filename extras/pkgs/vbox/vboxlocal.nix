@@ -30,7 +30,7 @@ let
   # Use maintainers/scripts/update.nix to update the version and all related hashes or
   # change the hashes in extpack.nix and guest-additions/default.nix as well manually.
   virtualboxVersion = "7.1.2";
-  virtualboxSha256 = "pointypointypointymypointissharpandpointy!";
+  virtualboxSha256 = "d3f2d81ad04761939d67c578062b08de7b346f3cdb1c84eca84b8a20ea513274";
 
   kvmPatchVersion = "20240828";
   kvmPatchHash = "sha256-g0esJbB1IGyLGZMLFJIY8ZYdHWuiM5IZtLMHZvCY6bs=";
