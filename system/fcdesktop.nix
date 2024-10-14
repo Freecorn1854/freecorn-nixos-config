@@ -42,6 +42,7 @@
     overlays = [
       # Add overlays your own flake exports (from overlays and pkgs dir):
       outputs.overlays.finalprev
+      outputs.overlays.additions
     ];
   };
 

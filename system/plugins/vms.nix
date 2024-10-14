@@ -1,4 +1,4 @@
-{config, pkgs, ...}: {
+{config, pkgs, outputs, ...}: {
   virtualisation = {
     libvirtd = {
       enable = true;
@@ -18,22 +18,15 @@
     spiceUSBRedirection.enable = true;
   };
 
-#  nixpkgs.config = {
-#      packageOverrides = pkgs: {
-#        virtualbox = unstable.virtualbox.override {
-#          inherit (config.boot) kernel;
-#        };
-#      };
-#  };
-
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.virtualbox.host.enableExtensionPack = true;
+#  virtualisation.virtualbox.host.enable = true;
+#  virtualisation.virtualbox.host.enableExtensionPack = true;
 
   environment.systemPackages = with pkgs; [
     virt-manager
     virtiofsd
     dnsmasq
     spice-vdagent
+    vboxlocal
   ];
 
   # dept of libvirtd ig
