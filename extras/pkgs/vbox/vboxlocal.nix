@@ -1,6 +1,6 @@
 { config, stdenv, fetchurl, fetchpatch, callPackage, lib, acpica-tools, dev86, pam, libxslt, libxml2, wrapQtAppsHook
 , libX11, xorgproto, libXext, libXcursor, libXmu, libIDL, SDL2, libcap, libGL, libGLU
-, libpng, glib, lvm2, libXrandr, libXinerama, libopus, libtpms, qtbase, qtx11extras
+, libpng, glib, lvm2, libXrandr, libXinerama, libopus, libtpms, qtbase, Qt6, qtx11extras
 , qttools, qtsvg, qtwayland, pkg-config, which, docbook_xsl, docbook_xml_dtd_43
 , alsa-lib, curl, libvpx, nettools, dbus, substituteAll, gsoap, zlib, xz
 , yasm, glslang
@@ -105,10 +105,7 @@ in stdenv.mkDerivation (finalAttrs: {
   ++ optionals (!headless) [ ./fix-sdl.patch
      # No update patch disables check for update function
      # https://bugs.launchpad.net/ubuntu/+source/virtualbox-ose/+bug/272212
-     (fetchpatch {
-       url = "https://salsa.debian.org/pkg-virtualbox-team/virtualbox/-/raw/debian/7.0.14-dfsg-1/debian/patches/16-no-update.patch";
-       hash = "sha256-UJHpuB6QB/BbxJorlqZXUF12lgq8gbLMRHRMsbyqRpY=";
-     })]
+     ]
   ++ [ ./extra_symbols.patch ]
      # When hardening is enabled, we cannot use wrapQtApp to ensure that VirtualBoxVM sees
      # the correct environment variables needed for Qt to work, specifically QT_PLUGIN_PATH.

@@ -3,7 +3,7 @@
   imports = [
     ./hardware/fcdesktop.nix
     ./users/freecorn.nix
-    ./plugins/vms.nix
+#    ./plugins/vms.nix
     ./plugins/sway.nix
     ./plugins/qt.nix
     ./plugins/plymouth.nix
@@ -42,7 +42,7 @@
     overlays = [
       # Add overlays your own flake exports (from overlays and pkgs dir):
       outputs.overlays.finalprev
-      outputs.overlays.additions
+#      outputs.overlays.additions
     ];
   };
 
