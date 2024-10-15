@@ -9,10 +9,6 @@
       "scanner"
       "lp"
       "plugdev"
-      "vboxusers"
-      "libvirtd"
-      "qemu-libvirtd"
-      "kvm"
     ];
     uid = 1000;
     shell = pkgs.zsh;
