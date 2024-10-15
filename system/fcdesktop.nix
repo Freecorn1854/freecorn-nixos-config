@@ -13,7 +13,7 @@
     ./flatpak
     ./nixregs.nix
     ./plugins/wine.nix
-    ./plugins/sddm.nix
+    ./plugins/greetd-sway.nix
     ./plugins/misc.nix
   ];
 
