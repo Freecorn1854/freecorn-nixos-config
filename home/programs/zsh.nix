@@ -9,9 +9,6 @@
       plugins = ["git"];
     };
     shellAliases = {
-      # QEMU aliases
-      vmrun-arch = "qemu-system-x86_64 -enable-kvm -m 4G -drive file=/home/freecorn/arch.img,format=qcow2 -nographic -smp 2";
-      vmrun-freebsd = "qemu-system-x86_64 -enable-kvm -m 4G -drive file=/home/freecorn/freebsd.img,format=qcow2 -nographic -smp 2";
 
       # NixOS aliases
       nixclean = "sudo nix-store --gc; nix-collect-garbage -d";
