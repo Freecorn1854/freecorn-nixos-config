@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     # Web Broswser
-    firefox
+    # will be handled by import
     #CLI Tools
     wget
     fastfetch
