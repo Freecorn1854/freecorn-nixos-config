@@ -17,7 +17,7 @@
     unstable.blender
     unstable.sdrpp
     gparted
-    unstable.pcmanfm-qt
+    pcmanfm-qt
     shotcut
     # Passwords
     keepass
