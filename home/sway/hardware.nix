@@ -25,8 +25,8 @@
       };
       # HID device config
       input = {
-        "0:14373:USB_OPTICAL_MOUSE" = {
-          pointer_accel = "-0.1";
+        "7119:2208:HID_1bcf:08a0_Mouse" = {
+          pointer_accel = "-0.85";
         };
         "*" = {
           accel_profile = "flat";
