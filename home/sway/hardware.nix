@@ -26,7 +26,7 @@
       # HID device config
       input = {
         "7119:2208:HID_1bcf:08a0_Mouse" = {
-          pointer_accel = "-0.85";
+          pointer_accel = "-0.875";
         };
         "*" = {
           accel_profile = "flat";
