@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   users.users.freecorn = {
-    description = "FreeCorn";
+    description = "Freecorn";
     isNormalUser = true;
     extraGroups = [ 
       "networkmanager"
