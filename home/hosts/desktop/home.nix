@@ -4,22 +4,22 @@
   # import programs
   imports = [
 #    inputs.nix-flatpak.homeManagerModules.nix-flatpak
-    ./users/freecorn.nix
-    ./sway
-    ./programs/librewolf.nix
-    ./programs/neovim.nix
-    ./programs/obs.nix
-    ./programs/remotedesktop.nix
-    ./programs/libreoffice.nix
-    ./programs/emulators.nix
-    ./programs/zsh.nix
-    ./programs/gtk.nix
-    ./programs/rofi.nix
-    ./programs/foot.nix
-    ./programs/gaming.nix
-    ./programs/swappy.nix
-    ./programs/guifiles.nix
-    ./programs/misc.nix
+    ./../../users/freecorn.nix
+    ./../../sway
+    ./../../programs/librewolf.nix
+    ./../../programs/neovim.nix
+    ./../../programs/obs.nix
+    ./../../programs/remotedesktop.nix
+    ./../../programs/libreoffice.nix
+    ./../../programs/emulators.nix
+    ./../../programs/zsh.nix
+    ./../../programs/gtk.nix
+    ./../../programs/rofi.nix
+    ./../../programs/foot.nix
+    ./../../programs/gaming.nix
+    ./../../programs/swappy.nix
+    ./../../programs/guifiles.nix
+    ./../../programs/misc.nix
   ];
 
   nixpkgs = {

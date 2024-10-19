@@ -1,20 +1,20 @@
 { config, pkgs, inputs, outputs, ... }: {
   # add plugins/packages that require to be install on system instead of home
   imports = [
-    ./hardware/fcdesktop.nix
-    ./users/freecorn.nix
-    ./plugins/vms.nix
-    ./plugins/sway.nix
-    ./plugins/qt.nix
-    ./plugins/plymouth.nix
-    ./plugins/fonts.nix
-    ./plugins/printing.nix
-    ./plugins/vr.nix
-    ./flatpak
-    ./nixregs.nix
-    ./plugins/wine.nix
-    ./plugins/sddm.nix
-    ./plugins/misc.nix
+    ./hardware.nix
+    ./../../users/freecorn.nix
+    ./../../plugins/vms.nix
+    ./../../plugins/sway.nix
+    ./../../plugins/qt.nix
+    ./../../plugins/plymouth.nix
+    ./../../plugins/fonts.nix
+    ./../../plugins/printing.nix
+    ./../../plugins/vr.nix
+    ./../../flatpak
+    ./../../nixregs.nix
+    ./../../plugins/wine.nix
+    ./../../plugins/sddm.nix
+    ./../../plugins/misc.nix
   ];
 
   # flake.

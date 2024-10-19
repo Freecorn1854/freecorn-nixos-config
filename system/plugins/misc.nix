@@ -3,5 +3,6 @@
   environment.systemPackages = with pkgs; [ 
     # misc system packages
     ffmpeg
+    git-crypt
   ];
 }

@@ -55,7 +55,12 @@
     nixosConfigurations = {
       FreecornDesktop = mkNixos [
 	  inputs.nix-flatpak.nixosModules.nix-flatpak
-	  ./system/fcdesktop.nix
+	  ./system/hosts/desktop/fcdesktop.nix
+	];
+
+      freecornserver = mkNixos [
+	  inputs.nix-flatpak.nixosModules.nix-flatpak
+	  ./system/hosts/server/fcserver.nix
 	];
       };
 
@@ -63,7 +68,12 @@
     # Available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
       "freecorn@FreecornDesktop" = mkHome [
-          ./home/home.nix
+          ./home/hosts/desktop/home.nix
+          nur.nixosModules.nur
+        ] nixpkgs.legacyPackages."x86_64-linux";
+
+       "freecorn@freecornserver" = mkHome [
+          ./home/hosts/server/home.nix
           nur.nixosModules.nur
         ] nixpkgs.legacyPackages."x86_64-linux";
       };
