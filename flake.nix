@@ -48,7 +48,10 @@
 
     # Variables defined so they can be accessed globally
     ws = import ./extras/workspaces.nix;
-    look = import ./extras/look.nix;    
+    look = import ./extras/look.nix;   
+
+    # secrets for server
+    secrets = import ./system/hosts/server/secrets.nix;
 
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
