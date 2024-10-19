@@ -1,4 +1,4 @@
-{ config, pkgs, options, lib, ... }:
+{ config, pkgs, options, lib, outputs, inputs, ... }:
 let
   # Secrets and passwords
 #  secrets = import ./secrets.nix;
@@ -6,13 +6,16 @@ in
 
 {
   imports = [ 
-    ./hardware-configuration.nix 
+    ./hardware.nix 
     ./freecorn.nix
     ./jimbo.nix
     ./vaultwarden.nix
 #    ./wireguard.nix
 #    ./neovim.nix 
   ];
+  #flake
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Bootloader
   boot.loader.grub = {
