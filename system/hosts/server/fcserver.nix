@@ -5,7 +5,8 @@ let
 in
 
 {
-  imports = [ 
+  imports = [
+    ./secrets.nix
     ./hardware.nix 
     ./freecorn.nix
     ./jimbo.nix
