@@ -23,9 +23,4 @@ in {
       extraGroups = [ "nfsShare" ];
       isSystemUser = true;
   };
-
-  # Define home manager programs and configs
-
-      # Don't change this
-      home.stateVersion = "24.05";
 }
