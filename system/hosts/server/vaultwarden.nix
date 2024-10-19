@@ -1,9 +1,15 @@
-{outputs, ...}: {
+{outputs, ...}: 
+let
+  # Secrets and passwords
+  secrets = import ./secrets.nix;
+in
+
+{
   services = {
     vaultwarden = {
       enable = true;
       config = {
-        DOMAIN = "https://warden.${outputs.secrets.cornDomain}";
+        DOMAIN = "https://warden.${secrets.cornDomain}";
         SIGNUPS_ALLOWED = false;
         ROCKET_ADDRESS = "127.0.0.1";
         ROCKET_PORT = 8222;
@@ -11,7 +17,7 @@
 
       };
     };
-    nginx.virtualHosts."warden.${outputs.secrets.cornDomain}" =  {
+    nginx.virtualHosts."warden.${secrets.cornDomain}" =  {
       enableACME = true;
       forceSSL = true;
       locations."/" = {
