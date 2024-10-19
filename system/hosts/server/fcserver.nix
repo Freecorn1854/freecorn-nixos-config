@@ -162,7 +162,7 @@ in
   # Get certificates for Coturn
   security.acme = {
     acceptTerms = true;
-    defaults.email = secrets.cornEmail;
+    defaults.email = ${outputs.secrets.cornEmail};
   };
 
   # Allow unfree packages
@@ -248,7 +248,7 @@ in
 #  };
 
   # Copy and link the NixOS configuration file to (/run/current-system/configuration.nix).
-  system.copySystemConfiguration = true;
+#  system.copySystemConfiguration = true;
 
   # Don't change this
   system.stateVersion = "24.05";

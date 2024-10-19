@@ -5,7 +5,7 @@ in {
   users.users.freecorn = {
     description = "FreeCorn";
     isNormalUser = true;
-#    openssh.authorizedKeys.keys = secrets.cornKeys;
+    openssh.authorizedKeys.keys = ${outputs.secrets.cornKeys};
     extraGroups = [ 
       "networkmanager"
       "wheel"
