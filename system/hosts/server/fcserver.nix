@@ -37,11 +37,10 @@ in
   programs.nix-ld.libraries = with pkgs; [
  
   # Define a users and groups
-    users.users.nextcloud = {
+    users.nextcloud = {
       extraGroups = [ "nfsShare" ];
       isSystemUser = true;
     };
-  };
 
   # RTL-SDR Support
   hardware.rtl-sdr.enable = true;

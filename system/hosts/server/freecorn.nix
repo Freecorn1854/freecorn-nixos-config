@@ -19,6 +19,10 @@ in {
     ];
     uid = 1000;
   };
+  users.users.nextcloud = {
+      extraGroups = [ "nfsShare" ];
+      isSystemUser = true;
+  };
 
   # Define home manager programs and configs
   home-manager = {
