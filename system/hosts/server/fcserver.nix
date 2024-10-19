@@ -213,10 +213,6 @@ in
 #        4455
 #        24454 # minecraft vc mod
       ];
-      # Add extra input rules using nftables
-      extraInputRules = ''
-        ip saddr { 10.0.0.124, ${secrets.jimIP1}, ${secrets.jimIP2}, ${secrets.lunaIP} } tcp dport 2049 accept comment "Accept NFS"
-      '';
     };
     nftables = {
       enable = true;
