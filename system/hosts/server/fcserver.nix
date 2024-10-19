@@ -6,7 +6,7 @@ in
 
 {
   imports = [
-    ./secrets.nix
+#    ./secrets.nix
     ./hardware.nix 
     ./freecorn.nix
     ./jimbo.nix
