@@ -28,6 +28,4 @@ in {
 
       # Don't change this
       home.stateVersion = "24.05";
-    };
-  };
 }
