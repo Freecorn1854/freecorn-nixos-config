@@ -33,9 +33,7 @@ in
   i18n.defaultLocale = "en_CA.UTF-8";
 
   # allow non nix programs to run
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
- 
+  programs.nix-ld.enable = true; 
   # Define a users and groups
 
 
