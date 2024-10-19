@@ -1,7 +1,7 @@
 { config, pkgs, options, lib, outputs, inputs, ... }:
 let
   # Secrets and passwords
-  secrets = import ./secrets.nix;
+#  secrets = import ./secrets.nix;
 in
 
 {
