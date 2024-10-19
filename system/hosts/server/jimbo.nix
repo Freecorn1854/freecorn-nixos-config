@@ -5,7 +5,7 @@ in {
   users.users.jimbo = {
     description = "Jimbo";
     isNormalUser = true;
-    openssh.authorizedKeys.keys = secrets.jimKeys;
+#    openssh.authorizedKeys.keys = secrets.jimKeys;
     extraGroups = [ 
       "networkmanager"
       "wheel"
