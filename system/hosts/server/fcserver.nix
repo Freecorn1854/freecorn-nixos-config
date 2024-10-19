@@ -54,7 +54,7 @@ in
       enable = true;
       environment = {
         PUFFER_WEB_HOST = ":5010";
-        PUFFER_PANEL_SETTINGS_MASTERURL = "https://ppanel.${secrets.cornDomain}";
+        PUFFER_PANEL_SETTINGS_MASTERURL = "https://ppanel.freecorn1854.win";
 	PUFFER_PANEL_REGISTRATIONENABLED = "false";
        # PUFFER_PANEL_EMAIL_PROVIDER = "smtp";
        # PUFFER_PANEL_EMAIL_HOST = "mx.${outputs.secrets.jimDomain}:587";
@@ -85,21 +85,21 @@ in
 
     # Homepage HTML
     virtualHosts = {
-      "${secrets.cornDomain}" = {
+      "freecorn1854.win" = {
         enableACME = true;
         addSSL = true;
         root = "/var/www/cornweb";
       };
 
       # non-free websites
-      "nonfree.${secrets.cornDomain}" = {
+      "nonfree.freecorn1854.win" = {
         enableACME = true;
         forceSSL = true;
         root = "/var/www/non-free";
       };
 
       # websdr server
-      "ppanel.${secrets.cornDomain}" = {
+      "ppanel.freecorn1854.win" = {
         enableACME = true;
         forceSSL = true;
         locations."/" = {
@@ -109,7 +109,7 @@ in
       };
 
       # Nextcloud Proxy
-      "cloud.${secrets.cornDomain}" = {
+      "cloud.freecorn1854.win" = {
         enableACME = true;
         addSSL = true;
         locations."/" = {
@@ -145,7 +145,7 @@ in
   services.nextcloud = {
     enable = true;
     package = pkgs.nextcloud29;
-    hostName = "cloud.${secrets.cornDomain}";
+    hostName = "cloud.freecorn1854.win";
     datadir = "/mnt/nextcloud";
     https = true;
     config = {
@@ -154,7 +154,7 @@ in
     };
     settings = {
       trusted_proxies = [ "127.0.0.1" ];
-      trusted_domains = [ "cloud.${secrets.cornDomain}" ];
+      trusted_domains = [ "cloud.freecorn1854.win" ];
       overwriteprotocol = "https";
     };
   };
