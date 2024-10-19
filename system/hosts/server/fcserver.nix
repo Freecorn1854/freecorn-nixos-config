@@ -37,11 +37,7 @@ in
   programs.nix-ld.libraries = with pkgs; [
  
   # Define a users and groups
-  users = {
-    groups = {
-      nfsShare = {};
-    };
-    users.nextcloud = {
+    users.users.nextcloud = {
       extraGroups = [ "nfsShare" ];
       isSystemUser = true;
     };
