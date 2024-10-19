@@ -51,7 +51,7 @@
     look = import ./extras/look.nix;   
 
     # secrets for server
-    secrets = import ./system/hosts/server/secrets.nix;
+#    secrets = import ./system/hosts/server/secrets.nix;
 
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
