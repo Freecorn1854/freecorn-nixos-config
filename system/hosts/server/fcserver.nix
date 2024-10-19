@@ -160,10 +160,10 @@ in
   };
 
   # Get certificates for Coturn
-#  security.acme = {
-#    acceptTerms = true;
-#    defaults.email = secrets.cornEmail;
-#  };
+  security.acme = {
+    acceptTerms = true;
+    defaults.email = secrets.cornEmail;
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
