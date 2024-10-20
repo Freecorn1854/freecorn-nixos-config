@@ -1,3 +1,3 @@
 system/hosts/server/secrets.nix filter=git-crypt diff=git-crypt
-home/assets/wallpapers/1.heic filter=git-crypt diff=git-crypt
-home/assets/wallpapers/2.heic filter=git-crypt diff=git-crypt
+home/assets/wallpapers/1.png filter=git-crypt diff=git-crypt
+home/assets/wallpapers/2.png filter=git-crypt diff=git-crypt

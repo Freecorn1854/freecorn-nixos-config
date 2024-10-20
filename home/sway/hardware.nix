@@ -11,7 +11,7 @@
           pos = "1280 0";
           mode = "1920x1080@60Hz";
           max_render_time = "3";
-          bg = "~/.wallpapers/1.heic fill";
+          bg = "~/.wallpapers/1.png fill";
           scale = "1";
           adaptive_sync = "off";
         };
@@ -19,7 +19,7 @@
           pos = "0 124";
           mode = "1280x1024@75Hz";
           max_render_time = "3";
-          bg = "~/.wallpapers/2.heic fill";
+          bg = "~/.wallpapers/2.png fill";
 	  adaptive_sync = "off";
         };
       };
