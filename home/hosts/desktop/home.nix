@@ -6,7 +6,7 @@
 #    inputs.nix-flatpak.homeManagerModules.nix-flatpak
     ./../../users/freecorn.nix
     ./../../sway
-    ./../../programs/librewolf.nix
+    ./../../programs/firefox.nix
     ./../../programs/neovim.nix
     ./../../programs/obs.nix
     ./../../programs/remotedesktop.nix
