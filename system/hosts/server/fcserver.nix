@@ -162,7 +162,7 @@ in
   # Get certificates for Coturn
   security.acme = {
     acceptTerms = true;
-    defaults.email = ${outputs.secrets.cornEmail};
+    defaults.email = "${outputs.secrets.cornEmail}";
   };
 
   # Allow unfree packages
@@ -183,6 +183,7 @@ in
     # openwebrx
     qbittorrent
     vim
+    git-crypt
   ];
 
   # Enable the OpenSSH daemon.

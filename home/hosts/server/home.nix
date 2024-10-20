@@ -4,6 +4,7 @@
   # import programs
   imports = [
 #    inputs.nix-flatpak.homeManagerModules.nix-flatpak
+    ./../../users/freecornserver.nix
     ./../../programs/neovim.nix
     ./../../programs/zsh.nix
   ];
