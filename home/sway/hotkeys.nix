@@ -67,7 +67,11 @@
          "${primeMod}+Shift+f" = ''exec swayshot --swappy'';
          "Shift+Print" = ''exec swayshot --current'';
          "Ctrl+Print" = ''exec swayshot --all'';
-	
+
+	 
+        # Change focus between floating/tiled, toggle floating
+        "${primeMod}+space" = ''focus mode_toggle'';
+        "${primeMod}+Shift+space" = ''floating toggle'';
       };
     };
   };
