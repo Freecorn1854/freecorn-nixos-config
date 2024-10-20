@@ -261,6 +261,14 @@
 in {
   # Enable Librewolf and extensions
   programs.firefox = let
+    commonExtensions = with config.nur.repos.rycee.firefox-addons; [
+      ublock-origin
+      bitwarden
+      sponsorblock
+      return-youtube-dislikes
+      simple-tab-groups
+      no-pdf-download
+    ];
     commonSearch = {
       force = true;
       default = "Google";
@@ -335,7 +343,7 @@ in {
     profiles = {
       Freecorn = {
         id = 0;
-
+        extensions = commonExtensions;
         search = commonSearch;
         settings = commonSettings;
         userChrome = ''
@@ -345,7 +353,7 @@ in {
       };
       Alt = {
         id = 1;
-
+        extensions = commonExtensions;
         search = commonSearch;
         settings = commonSettings;
         userChrome = ''
@@ -355,7 +363,7 @@ in {
       };
       Misc = {
         id = 2;
-
+        extensions = commonExtensions;
         search = commonSearch;
         settings = commonSettings;
         containersForce = true;
