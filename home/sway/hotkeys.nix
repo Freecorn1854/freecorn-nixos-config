@@ -70,7 +70,7 @@
 
 	 
         # Change focus between floating/tiled, toggle floating
-        "${primeMod}+space" = ''focus mode_toggle'';
+#        "${primeMod}+space" = ''focus mode_toggle'';
         "${primeMod}+Shift+space" = ''floating toggle'';
       };
     };
