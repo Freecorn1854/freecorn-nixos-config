@@ -42,6 +42,7 @@
     efi = {
       canTouchEfiVariables = true;
     };
+  };
 
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp0s10.useDHCP = lib.mkDefault true;
