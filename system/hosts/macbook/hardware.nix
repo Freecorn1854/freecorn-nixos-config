@@ -3,13 +3,6 @@
 # to /etc/nixos/configuration.nix instead.
 { config, lib, pkgs, modulesPath, ... }:
 
-boot.loader = {
-  systemd-boot.enable = true;
-  efi = {
-    canTouchEfiVariables = true;
-    efiSysMountPoint = "/boot/efi"; # ← use the same mount point here.
-  };
-
 {
   imports =
     [ (modulesPath + "/installer/scan/not-detected.nix")
@@ -39,6 +32,17 @@ boot.loader = {
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
+
+  # EFI shit
+  boot.loader.systemd-boot = {
+      enable = true;
+    };
+
+  boot.loader = {
+    efi = {
+      canTouchEfiVariables = true;
+    };
+
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp0s10.useDHCP = lib.mkDefault true;
 
