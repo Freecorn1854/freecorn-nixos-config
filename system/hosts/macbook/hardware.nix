@@ -32,7 +32,11 @@
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
+  hardware.opengl.enable = true;
 
+  hardware.opengl.extraPackages = [ pkgs.mesa.drivers ];
+
+  hardware.opengl.driSupport32Bit = true;
   # EFI shit
   boot.loader.systemd-boot = {
       enable = true;
@@ -49,4 +53,5 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+
 }

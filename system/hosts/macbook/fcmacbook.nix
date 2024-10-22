@@ -18,6 +18,8 @@
   # flake.
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  programs.steam.enable = true;
+
   # allow non nix programs to run
   programs.nix-ld.enable = true;
 
