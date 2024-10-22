@@ -61,6 +61,11 @@
 	  ./system/hosts/desktop/fcdesktop.nix
 	];
 
+      FreecornMacbook = mkNixos [
+	  inputs.nix-flatpak.nixosModules.nix-flatpak
+	  ./system/hosts/macbook/fcmacbook.nix
+	];
+
       freecornserver = mkNixos [
 	  inputs.nix-flatpak.nixosModules.nix-flatpak
 	  ./system/hosts/server/fcserver.nix
@@ -72,6 +77,11 @@
     homeConfigurations = {
       "freecorn@FreecornDesktop" = mkHome [
           ./home/hosts/desktop/home.nix
+          nur.nixosModules.nur
+        ] nixpkgs.legacyPackages."x86_64-linux";
+
+      "freecorn@FreecornMacbook" = mkHome [
+          ./home/hosts/macbook/home.nix
           nur.nixosModules.nur
         ] nixpkgs.legacyPackages."x86_64-linux";
 
