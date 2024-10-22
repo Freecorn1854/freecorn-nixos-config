@@ -3,6 +3,13 @@
 # to /etc/nixos/configuration.nix instead.
 { config, lib, pkgs, modulesPath, ... }:
 
+boot.loader = {
+  systemd-boot.enable = true;
+  efi = {
+    canTouchEfiVariables = true;
+    efiSysMountPoint = "/boot/efi"; # ← use the same mount point here.
+  };
+
 {
   imports =
     [ (modulesPath + "/installer/scan/not-detected.nix")
