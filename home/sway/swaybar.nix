@@ -202,7 +202,21 @@
       return-type = "json";
       interval = 150;
     };
-
+    # Laptop modules
+    backlightModule = {
+      format = "{icon}  {percent}%";
+      format-icons = ["" "󰖨"];
+      tooltip = false;
+    };
+    batteryModule = {
+      interval = 60;
+      states = {
+        warning = 30;
+        critical = 15;
+      };
+      format = "{icon}   {capacity}%";
+      format-icons = ["" "" "" "" ""];
+    };
   in {
     enable = true;
     settings = {
@@ -260,6 +274,42 @@
         "memory" = ramModule;
         "custom/vram" = vramModule;
         "custom/clock-short" = shortClockModule;
+      };
+      displayLap = {
+        name = "laptop";
+        position = "top";
+        layer = "bottom";
+        output = ["LVDS-2"];
+        modules-left = ["sway/workspaces" "sway/window"];
+        modules-right = [
+          "pulseaudio"
+          "custom/media"
+          "custom/weather2"
+          "cpu"
+          "memory"
+          "custom/vram"
+          "backlight"
+          "battery"
+          "custom/clock-long"
+          "gamemode"
+          "sway/scratchpad"
+          "tray"
+          "bluetooth"
+          "network"
+        ];
+        "sway/workspaces" = swayWorkspacesModule;
+        "sway/window" = swayWindowsModule;
+        "pulseaudio" = pulseModule;
+        "cpu" = cpuModule;
+        "memory" = ramModule;
+        "custom/vram" = vramModule;
+        "backlight" = backlightModule;
+        "battery" = batteryModule;
+        "custom/clock-long" = longClockModule;
+        "sway/scratchpad" = scratchpadModule;
+        "tray" = trayModule;
+        "bluetooth" = bluetoothModule;
+        "network" = networkModule;
       };
     };
     style = ''

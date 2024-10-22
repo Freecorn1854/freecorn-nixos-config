@@ -8,6 +8,7 @@
     ./../../plugins/plymouth.nix
     ./../../plugins/fonts.nix
     ./../../flatpak
+    ./../../hardware/wifi.nix
     ./../../nixregs.nix
     ./../../plugins/wine.nix
     ./../../plugins/sddm.nix
@@ -73,16 +74,16 @@
 #  programs.steam.enable = true;
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Enable networking
   networking = {
     hostName = "FreecornMacbook";
-    networkmanager.enable = true;
-    #firewall = {
-    #  allowedTCPPorts = [];
+#    networkmanager.enable = true;
+    firewall = {
+      allowedTCPPorts = [ 22 ];
     #  allowedUDPPorts = [];
-    #};
+    };
   };
 
   # Before changing this value read the docs on stateVersion
