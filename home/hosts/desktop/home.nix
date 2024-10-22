@@ -5,7 +5,7 @@
   imports = [
 #    inputs.nix-flatpak.homeManagerModules.nix-flatpak
     ./../../users/freecorn.nix
-    ./../../sway
+    ./../../sway/sway.nix
     ./../../programs/firefox.nix
     ./../../programs/neovim.nix
     ./../../programs/obs.nix
