@@ -19,6 +19,7 @@
     ./../../programs/gaming.nix
     ./../../programs/swappy.nix
     ./../../programs/guifiles.nix
+    ./../../programs/fastfetch.nix
     ./../../programs/misc.nix
   ];
 
